@@ -1,0 +1,81 @@
+/* Header style */
+/* body{
+   margin: 0;
+   background: #444;
+ 
+ width: 100%; 
+ height: 100%;
+ font-family: Arial; 
+} */
+p {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* form */
+
+form {
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  grids */
+
+
+.container{
+
+    /* width: 100%; */
+ display: grid; 
+ grid-template-rows: 100px 100px 100px 100px 100px 100px;
+ grid-template-columns: 100px 100px 100px 100px 100px 100px;
+/* // justify-content: center; */
+
+}
+
+/* items */
+/* .items1{
+    grid-row:1 /3;
+    grid-column: 1/7;
+}
+
+.items2{
+    grid-row:3 /5;
+    grid-column: 1/7;
+}
+
+.items3{
+  grid-area: 6/1/-1/-1;
+} */
+
+.color1{
+    background-color: blue;
+}
+
+.color2{
+    background-color: rgb(6, 99, 83);
+}
+
+.color3{
+    background-color: rgb(165, 111, 10);
+}
+/*  textarea  style */
+textarea{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+/* radio bottom style */
+
+/* banners */
+.all-banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}

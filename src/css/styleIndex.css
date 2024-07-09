@@ -1,0 +1,163 @@
+/* Header style */
+body,html{
+    margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+
+           /* // background: linear-gradient(to bottom right, blue, rgb(250, 220, 220)); */
+            /* You can also use an image as the background */
+            background: url('/styles/imges/3672201.jpg') no-repeat center; 
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+}
+/* form */
+form {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    height: 45%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(20px);
+}
+.row {
+    align-content: center;
+    min-height: 71vh;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+label{
+    color: white;
+}
+/*  grids */
+
+.container{
+ display: grid; 
+ grid-template-rows: repeat(1,minmax(100px ,1fr));
+ grid-template-columns: repeat(6,minmax(100px ,1fr));
+/* // justify-content: center; */
+padding-top: 34px;
+}
+
+
+/* end  grids */
+
+
+/* satrt Bottom */
+.btn{
+    color: black;
+    background-color: white;
+}
+
+/* End Bottom */
+
+/* start items */
+
+.items1 {
+    grid-area: 1 / 1 / 2 / 7;
+    justify-self: center;   
+}
+.items2 {
+    grid-area: 3 / 1 / 2 / 7;
+    justify-self: center;
+    margin: auto ;
+}
+
+.items3 {
+    justify-self: center;
+    grid-area: 5 / 1 / 3 / 7;
+}
+/* end items */
+
+/* start Errors */
+p {
+    color: red;
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+/* End Errors */
+
+/* Start  textarea  style */
+textarea {
+    border-radius: 8px;
+    border: 0px solid;
+    justify-self: center;
+    width: 350px;
+    align-self: center;
+    height: 185px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: transparent;
+    /* background-color: aquamarine; */
+    color: white;
+}
+/* End  textarea  style */
+
+/*  start radio bottom style */
+
+/*  Endradio bottom style */
+
+/*  start banners */
+.all-banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+/*  end banners */
+
+/* CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}

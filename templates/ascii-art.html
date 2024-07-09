@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Document</title>
-     <link rel="stylesheet" href="/styles/css/ErrorsStyle.css">
 </head>
 <body>
-   <div class="text-code">
+    
+   <p>Text:</p>
+    <pre>{{.Text}}</pre>
+    <p>Banner: {{.Banner}}</p>
 
-    <h1 class="status-code">{{.Code}}</h1>
-    <br>
-       <h2> {{.Message}}</h2>
-   </div>
+    <form action="/">
+        <button type="submit">Go Back</button>
+    </form>
 </body>
 </html>

@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/css/styleIndex.css">
     <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        
-          <form action="/asci_art" method="post">
-            <textarea name="text" id=""></textarea>
-            <select name="banner" id="">
-              <option value="shadow.txt">shadow</option>
-              <option value="standard.txt">standard</option>
-              <option value="thinkertoy.txt">thinkertoy</option>
-            </select>
-            <button>Send</button>
-          </form>
-       
-      </div>
-    </div>
-  </body>
+</head>
+<body>
+
+    <h1 class="asci">Ascii Art Web</h1>
+
+<div class="row">
+    <form action="/ascii-art" method="post">
+        <div class="container">
+            <div class="items1 ">  
+                 <textarea class="color1" name="text" id="" ></textarea>
+                    <!-- <p class="errors">hello</p> -->
+                     {{ if .Message }}
+                            <p class="errors" >{{.Message}}</p>
+                    {{end}}
+            </div>
+            <div class="items2 color3 "><div class="all-banner">
+
+                <div class="hidden-toggles">		
+                    <input  name="banner"  id="standard" type="radio" value="standard.txt"  checked>
+                    <label  for="standard">standard</label>
+                    
+                    <input  name="banner" id="shadow" type="radio"  value="shadow.txt">
+                    <label for="shadow" >shadow</label>	
+                    
+                    <input  name="banner" id="thinkertoy" type="radio"  value="thinkertoy.txt"  >
+                    <label for="thinkertoy" >thinkertoy</label>	 
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+            <div class="items3 "><button class="button-63" role="button">Send</button>
+            </div>
+        </div>
+    </form>
+    
+</div>
+
+
+</body>
 </html>

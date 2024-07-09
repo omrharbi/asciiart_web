@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func WriteTextFileAscii(style string) ([][]string) {
+func WriteTextFileAscii(style string) ([][]string ,int){
 	file, errs := os.ReadFile(style)
 	if errs != nil {
 		fmt.Println(errs)
@@ -14,7 +14,7 @@ func WriteTextFileAscii(style string) ([][]string) {
 	}
 	started := ""
 	sep := ""
-
+	count := strings.Count(string(file), "\n")
 	if style == "thinkertoy.txt" {
 		started = string(file[2:])
 		sep = string(file[:2])
@@ -27,5 +27,5 @@ func WriteTextFileAscii(style string) ([][]string) {
 	for _, l := range splitFile {
 		sliceToAppendAsci = append(sliceToAppendAsci, strings.Split(l, sep))
 	}
-	return sliceToAppendAsci
+	return sliceToAppendAsci,count
 }
